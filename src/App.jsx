@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Toaster } from 'sonner'
+import { Analytics } from '@vercel/analytics/react'
 import { CardapioPage } from './pages/cardapio/CardapioPage'
 import { LojistaPage } from './pages/lojista/LojistaPage'
 import { AdminPage } from './pages/admin/AdminPage'
@@ -9,6 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Toaster position="top-center" richColors />
+      <Analytics />
       <div className="h-dvh w-full flex flex-col overflow-hidden bg-[#F8F9FA]">
         <Routes>
           {/* Autenticação & Acesso ao Sistema */}
